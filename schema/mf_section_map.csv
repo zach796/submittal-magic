@@ -1,9 +1,55 @@
-mf_section,section_title,allowed_types
-260519,Low-Voltage Electrical Power Conductors and Cables,Conductor|Cable|Wire
-260526,Grounding and Bonding for Electrical Systems,Ground-Bar|Clamp|Bonding-Jumper|Ground-Rod
-260533,Raceways and Boxes for Electrical Systems,Conduit|Junction-Box|Outlet-Box|Pull-Box|Fitting
-262200,Low-Voltage Transformers,Transformer
-262416,Panelboards,Panelboard
-262726,Wiring Devices,Receptacle|Switch|Dimmer|GFCI|USB-Outlet|Wall-Plate
-265100,Interior Lighting,Troffer|Strip|Downlight|High-Bay|Exit|Emergency|Wallpack
-265600,Exterior Lighting,Area-Light|Flood|Bollard|Wallpack|Streetlight
+mf_section,title
+260000,Electrical
+260100,Operation and Maintenance of Electrical Systems
+260110,Operation and Maintenance of Medium-Voltage Electrical Distribution
+260120,Operation and Maintenance of Low-Voltage Electrical Distribution
+260130,Operation and Maintenance of Electrical Power Generating and Storing Equipment
+260140,Operation and Maintenance of Electrical Protection
+260150,Operation and Maintenance of Lighting
+260500,Common Work Results for Electrical
+260510,Electrical Demolition
+260519,Low-Voltage Electrical Power Conductors and Cables
+260526,Grounding and Bonding for Electrical Systems
+260529,Hangers and Supports for Electrical Systems
+260533,Raceways and Boxes for Electrical Systems
+260543,Underground Ducts and Raceways for Electrical Systems
+260553,Identification for Electrical Systems
+260573,Short-Circuit Coordination Study
+260900,Instrumentation and Control for Electrical Systems
+260910,Electrical Controls
+260920,Lighting Controls
+260930,Energy Monitoring and Control
+260940,Lighting Dimming Controls
+260950,Load Control Devices
+260960,Theatrical Lighting Controls
+261000,Medium-Voltage Electrical Distribution
+261100,Medium-Voltage Transformer Assemblies
+261200,Medium-Voltage Switchgear
+261300,Medium-Voltage Switchboards
+261400,Medium-Voltage Circuit Protective Devices
+262000,Low-Voltage Electrical Distribution
+262200,Low-Voltage Transformers
+262300,Low-Voltage Switchgear
+262400,Switchboards
+262416,Panelboards
+262419,Motor Control Centers
+262420,Switching Devices
+262430,Fuses
+262440,Circuit Breakers
+262726,Wiring Devices
+263000,Facility Electrical Power Generating and Storing Equipment
+263100,Photovoltaic Collectors
+263200,Wind Energy Collectors
+263213,Engine Generators
+263250,Fuel Cells
+263300,Power Storage Equipment
+263353,Static Uninterruptible Power Supply (UPS)
+263600,Transfer Switches
+264000,Electrical Protection
+264100,Facility Lightning Protection
+264313,Surge Protective Devices
+265000,Lighting
+265100,Interior Lighting
+265600,Exterior Lighting
+265700,Special Purpose Lighting
+265800,Lighting Accessories
