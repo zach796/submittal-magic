@@ -1,0 +1,26 @@
+name: Deploy to AWS (S3 test)
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Configure AWS credentials (OIDC)
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: arn:aws:iam::713665788458:role/GitHubActionsRole-SubmittalMagic
+        aws-region: us-west-2
+
+    - name: Create test file and upload to S3
+      run: |
+        echo "hello from github actions $(date -u +"%Y-%m-%dT%H:%M:%SZ")" > hello.txt
+        aws s3 cp hello.txt s3://submittal-magic-dev/hello.txt
