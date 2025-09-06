@@ -1,0 +1,36 @@
+name: Validate & Upload to S3
+
+on:
+  push:
+    branches: [ "main" ]
+
+env:
+  AWS_REGION: us-west-2
+  S3_BUCKET: 
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Configure AWS (OIDC)
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        role-to-assume: arn:aws:iam::713665788458:role/GitHubActionsRole-SubmittalMagic
+        aws-region: ${{ env.AWS_REGION }}
+
+    - name: Install deps
+      run: python3 -m pip install --upgrade boto3
+
+    - name: Smoke test - create example SPEC (valid)
+      run: |
+        echo "placeholder" > "USA-HI-009-1-236116-265100-Troffer-2x4-LED-Lithonia.pdf"
+
+    - name: Validate & Upload
+      run: |
+        python3 tools/s3_uploader.py "USA-HI-009-1-236116-265100-Troffer-2x4-LED-Lithonia.pdf" --bucket "${{ env.S3_BUCKET }}"

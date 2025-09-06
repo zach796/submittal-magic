@@ -1,0 +1,9 @@
+mf_section,section_title,allowed_types
+260519,Low-Voltage Electrical Power Conductors and Cables,Conductor|Cable|Wire
+260526,Grounding and Bonding for Electrical Systems,Ground-Bar|Clamp|Bonding-Jumper|Ground-Rod
+260533,Raceways and Boxes for Electrical Systems,Conduit|Junction-Box|Outlet-Box|Pull-Box|Fitting
+262200,Low-Voltage Transformers,Transformer
+262416,Panelboards,Panelboard
+262726,Wiring Devices,Receptacle|Switch|Dimmer|GFCI|USB-Outlet|Wall-Plate
+265100,Interior Lighting,Troffer|Strip|Downlight|High-Bay|Exit|Emergency|Wallpack
+265600,Exterior Lighting,Area-Light|Flood|Bollard|Wallpack|Streetlight
